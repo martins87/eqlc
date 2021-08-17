@@ -6,9 +6,6 @@ import { Container } from '@material-ui/core'
 const Home: NextPage = () => {
   return (
     <Container>
-      <Typography variant="h4">
-        Equal Cash
-      </Typography>      
     </Container>
   )
 }
