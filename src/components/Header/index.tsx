@@ -7,6 +7,8 @@ import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 
 import useStyles from './styles'
+import WalletConnector from '../WalletConnector'
+import Balance from '../Balance'
 
 const Header = () => {
   const classes = useStyles()
@@ -15,11 +17,13 @@ const Header = () => {
     <AppBar color="transparent" className={classes.root}>
       <Container>
         <Toolbar className={classes.toolbar}>
-          <Image src="/logo.svg" width="109" height="31" />
+          <Image src="/assets/images/logo.svg" alt="Composable logo" width="109" height="31" />
 
-          <Box>
-            <Typography variant="h4">Overview</Typography>
-          </Box>
+          <Typography className={classes.menu}>Overview</Typography>
+          <Typography className={classes.menu}>Portfolio</Typography>
+          <Typography className={classes.menu}>Equal Cash</Typography>
+          <Balance balance={256.325} />
+          <WalletConnector address="0xc5711e067096B404356D93568Ef8aa6b8dA528E5" />
         </Toolbar>
       </Container>
     </AppBar>

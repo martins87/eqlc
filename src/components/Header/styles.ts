@@ -2,10 +2,15 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    flewGrow: 1
+    display: 'flex',
+    boxShadow: 'none',
+    //flew: 1
   },
   toolbar: {
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+  },
+  menu: {
+    color: 'rgba(37, 37, 37, 0.6)'
   }
 }))
 

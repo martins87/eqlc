@@ -50,8 +50,8 @@ const theme = createTheme({
   palette: {
     type: 'light',
     primary: {
-      main: '#5EB872',
-      light: '#5EB87226',
+      main: 'rgba(37, 37, 37, 1)',
+      light: 'rgba(37, 37, 37, 0.6)',
     },
     secondary: {
       main: '#FF6666',
