@@ -4,7 +4,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     display: 'flex',
     boxShadow: 'none',
-    //flew: 1
   },
   toolbar: {
     justifyContent: 'space-between',
