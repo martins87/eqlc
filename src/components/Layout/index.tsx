@@ -4,6 +4,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 
 import theme from '../../theme'
 import Header from '../Header'
+import Footer from '../Footer'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -15,6 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
       <CssBaseline />
       <Header />
       { children }
+      <Footer />
     </ThemeProvider>
   )
 }

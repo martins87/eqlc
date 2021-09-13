@@ -1,17 +1,26 @@
-import type { AppProps } from 'next/app'
+import { useEffect } from 'react'
 import Head from 'next/head'
+import { AppProps } from 'next/app'
 
 import Layout from '../components/Layout'
+import '../global.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = (props: AppProps) => {
+  const { Component, pageProps } = props
+
+  useEffect(() => {
+    const jssStyles = document.querySelector('#jss-server-side')
+    console.log('jssStyles:', jssStyles)
+    if (jssStyles) {
+      jssStyles.parentElement!.removeChild(jssStyles)
+    }
+  }, [])
+
   return (
     <>
       <Head>
-        <title>Equal Cash</title>
-        <meta name="description" content="Equal Cash project" />
+        <title>Original Equal Cash</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"></link>
       </Head>
       <Layout>
         <Component {...pageProps} />
@@ -19,4 +28,5 @@ function MyApp({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
 export default MyApp

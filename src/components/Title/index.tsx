@@ -15,7 +15,7 @@ const Title = ({title, top, bottom, centered}: TitleProps) => {
   const classes = useStyles()
 
   return (
-    <Box textAlign={centered ? 'center' : 'left'} mt={14} mb={10} ml={3}>
+    <Box textAlign={centered ? 'center' : 'left'} mt={10} mb={10} ml={3}>
       <Typography variant="h2" className={classes.title}>
         {title}
       </Typography>

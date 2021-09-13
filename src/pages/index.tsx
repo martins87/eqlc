@@ -1,9 +1,8 @@
-import type { NextPage } from 'next'
 import { Container } from '@material-ui/core'
 
 import Title from '../components/Title'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <Container>
       <Title
