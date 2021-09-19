@@ -19,7 +19,7 @@ const MyApp = (props: AppProps) => {
   return (
     <>
       <Head>
-        <title>Original Equal Cash</title>
+        <title>Equal Cash</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <Layout>

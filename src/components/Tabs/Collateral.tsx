@@ -1,13 +1,13 @@
-import React from 'react';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import React from 'react'
+import Box from '@material-ui/core/Box'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import IconButton from '@material-ui/core/IconButton'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
-import InputBox from '../InputBox';
-import SVGImage from '../SVGImage';
-import useStyles from './styles';
+import InputBox from '../InputBox'
+import SVGImage from '../SVGImage'
+import useStyles from './styles'
 
 export type TokenIndicatorProps = {
   children?: any,
@@ -16,14 +16,14 @@ export type TokenIndicatorProps = {
 }
 
 const TokenIndicator = (props: TokenIndicatorProps) => {
-  const { tokenName, imageFile } = props;
-  const classes = useStyles();
+  const { tokenName, imageFile } = props
+  const classes = useStyles()
 
   return (
     <Box className={classes.tokenindicator}>
       <Grid
         container
-        justifyContent="space-between"
+        justify="space-between"
         alignItems="center">
         <Grid item className={classes.tokenIndicatorBox}>
           <SVGImage src={`Tokens/${imageFile}`} width="23.5" height="23.26" />
@@ -38,35 +38,35 @@ const TokenIndicator = (props: TokenIndicatorProps) => {
         </Grid>
       </Grid>
     </Box>
-  );
+  )
 }
 
 const HorizontalLine = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div className={classes.line}></div>
-  );
+  )
 }
 
 const Divider = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <Grid
       style={{ margin: '40px 0' }}
       container
       alignItems="center"
-      justifyContent="space-between">
+      justify="space-between">
       <Grid item><HorizontalLine /></Grid>
       <Grid item className={classes.linetext}>OR</Grid>
       <Grid item><HorizontalLine /></Grid>
     </Grid>
-  );
+  )
 }
 
 export const EqualCash = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div>
@@ -96,7 +96,7 @@ export const EqualCash = () => {
             </Grid>
 
             <Grid item xs={6}>
-              <Grid container alignItems="flex-end" justifyContent="flex-end">
+              <Grid container alignItems="flex-end" justify="flex-end">
                 <Grid item>
                   <Typography className={classes.text}>1000.00</Typography>
                 </Grid>
@@ -156,7 +156,7 @@ export const EqualCash = () => {
             </Grid>
 
             <Grid item xs={6}>
-              <Grid container alignItems="flex-end" justifyContent="flex-end">
+              <Grid container alignItems="flex-end" justify="flex-end">
                 <Grid item>
                   <Typography className={classes.text}>990.09</Typography>
                 </Grid>
@@ -189,7 +189,7 @@ export const EqualCash = () => {
 }
 
 export const EQLC = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div>
@@ -219,7 +219,7 @@ export const EQLC = () => {
             </Grid>
 
             <Grid item xs={6}>
-              <Grid container alignItems="flex-end" justifyContent="flex-end">
+              <Grid container alignItems="flex-end" justify="flex-end">
                 <Grid item>
                   <Typography className={classes.text}>1000.00</Typography>
                 </Grid>
@@ -279,7 +279,7 @@ export const EQLC = () => {
             </Grid>
 
             <Grid item xs={6}>
-              <Grid container alignItems="flex-end" justifyContent="flex-end">
+              <Grid container alignItems="flex-end" justify="flex-end">
                 <Grid item>
                   <Typography className={classes.text}>990.09</Typography>
                 </Grid>

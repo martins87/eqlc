@@ -1,10 +1,10 @@
-import React from 'react';
-import { Tabs as MuiTabs, Tab as MuiTab } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core/styles';
+import React from 'react'
+import { Tabs as MuiTabs, Tab as MuiTab } from '@material-ui/core'
+import Box from '@material-ui/core/Box'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
 
-import useStyles from './styles';
+import useStyles from './styles'
 
 export const Tabs = withStyles(theme => ({
   root: {
@@ -33,14 +33,14 @@ export const Tab = withStyles(theme => ({
 }))(MuiTab)
 
 interface TabPanelProps {
-  children?: React.ReactNode;
-  index: any;
-  value: any;
+  children?: React.ReactNode,
+  index: any,
+  value: any,
 }
 
 export const TabPanel = (props: TabPanelProps) => {
-  const { children, value, index, ...other } = props;
-  const classes = useStyles();
+  const { children, value, index, ...other } = props
+  const classes = useStyles()
 
   return (
     <div
@@ -57,5 +57,5 @@ export const TabPanel = (props: TabPanelProps) => {
         </Box>
       )}
     </div>
-  );
+  )
 }

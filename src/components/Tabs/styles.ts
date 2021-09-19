@@ -81,6 +81,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   root2: {
     width: '850px',
   }
-}));
+}))
 
 export default useStyles

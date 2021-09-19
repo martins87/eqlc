@@ -28,4 +28,4 @@ const MintTabs = () => {
   )
 }
 
-export default MintTabs
+export default MintTabs;

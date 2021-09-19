@@ -8,8 +8,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   toolbar: {
     justifyContent: 'space-between',
   },
-  menu: {
-    color: 'rgba(37, 37, 37, 0.6)'
+  link: {
+    color: 'rgba(37, 37, 37, 0.6)',
   }
 }))
 

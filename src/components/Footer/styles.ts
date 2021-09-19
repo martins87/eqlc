@@ -2,8 +2,8 @@ import { makeStyles, Theme } from '@material-ui/core'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    position: 'fixed',
-    bottom: 0,
+    //position: 'fixed',
+    //bottom: 0,
     background: 'linear-gradient(180deg, #FFF5DF 0%, #FFEFCA 92.71%)',
     width: '100%',
     height: '300px',
